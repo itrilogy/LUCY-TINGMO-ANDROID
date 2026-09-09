@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#0D5E42</color>
+    <color name="luxi_green">#0D5E42</color>
+    <color name="luxi_white">#F5F7FA</color>
+    <color name="luxi_cyan">#00D2FF</color>
+    <color name="luxi_dark">#121A17</color>
+</resources>

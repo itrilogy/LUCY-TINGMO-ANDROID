@@ -1,0 +1,18 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+app/release/
+app/build/
+# Large native AAR can be re-downloaded; keep if present
+# app/libs/*.aar
+app/src/main/assets/models/
+.kotlin/
