@@ -1,9 +1,28 @@
-# 听默 · Tingmo（Android）
+<div align="center">
+  <img src="docs/assets/tingmo-app-icon-256.png" width="96" height="96" alt="听默 · Tingmo" />
+  &nbsp;&nbsp;
+  <img src="docs/assets/luxi-lab-logo.png" width="140" alt="鹿溪联合创新实验室" />
+</div>
 
-**听而有迹 · 默而成文**  
-鹿溪联合创新实验室 · Android 实验客户端
+<h1 align="center">听默 · Tingmo（Android）</h1>
 
-独立工程路径：`/Users/kwangwah/Project/tingmo-android`  
+<p align="center">
+  <strong>听而有迹 · 默而成文</strong><br/>
+  鹿溪联合创新实验室 · Android 实验客户端
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Product-听默%20Tingmo-0D5E42" alt="product" />
+  <img src="https://img.shields.io/badge/Lab-鹿溪联合创新实验室-047538" alt="lab" />
+  <img src="https://img.shields.io/badge/Stack-Android%20%7C%20sherpa--onnx%20%7C%20Compose-blue" alt="stack" />
+</p>
+
+<p align="center">
+  仓库：<a href="https://github.com/itrilogy/LUCY-TINGMO-ANDROID">itrilogy/LUCY-TINGMO-ANDROID</a>
+</p>
+
+---
+
 与桌面听默（Handy lab fork）配合：本端聚焦 **模型管理、实时/后置转写、AI 纠偏**。
 
 ## 功能
@@ -33,7 +52,7 @@
 ## 打开与运行
 
 ```bash
-# Android Studio：File → Open → tingmo-android
+# Android Studio：File → Open → 本仓库根目录
 
 # 命令行（务必 JDK 17）：
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
@@ -71,5 +90,5 @@ gh release download v1.13.6 -R k2-fsa/sherpa-onnx -p 'sherpa-onnx-1.13.6.aar'
 
 ## 许可与品牌
 
-实验室内部实验构建。品牌归鹿溪联合创新实验室；上游桌面能力致谢 Handy（MIT）。  
+鹿溪联合创新实验室实验构建，代码随仓库公开。品牌归鹿溪联合创新实验室；上游桌面能力致谢 Handy（MIT）。  
 ONNX 推理基于 [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) / SenseVoice。
