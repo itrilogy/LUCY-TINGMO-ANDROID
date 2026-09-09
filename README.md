@@ -1,23 +1,25 @@
 <div align="center">
-  <img src="docs/assets/tingmo-app-icon-256.png" width="96" height="96" alt="听默 · Tingmo" />
+  <img src="docs/assets/tingmo-app-icon-256.png" width="64" height="64" alt="听默 · Tingmo 产品标" />
   &nbsp;&nbsp;
-  <img src="docs/assets/luxi-lab-logo.png" width="140" alt="鹿溪联合创新实验室" />
+  <img src="docs/assets/luxi-lab-logo.png" width="64" height="64" alt="鹿溪联合创新实验室 LUXI LAB" />
 </div>
 
 <h1 align="center">听默 · Tingmo（Android）</h1>
 
 <p align="center">
-  <strong>听而有迹 · 默而成文</strong><br/>
-  鹿溪联合创新实验室 · Android 实验客户端
+  <strong>听而有迹，默而成文</strong><br/>
+  <em>Listening in silence, transcribing without friction.</em>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Matrix-知行%C2%B7三动-0D5E42" alt="matrix" />
   <img src="https://img.shields.io/badge/Product-听默%20Tingmo-0D5E42" alt="product" />
   <img src="https://img.shields.io/badge/Lab-鹿溪联合创新实验室-047538" alt="lab" />
   <img src="https://img.shields.io/badge/Stack-Android%20%7C%20sherpa--onnx%20%7C%20Compose-blue" alt="stack" />
 </p>
 
 <p align="center">
+  <b>鹿溪联合创新实验室</b>（LUXI Joint Innovation Lab）出品 · Android 实验客户端<br/>
   仓库：<a href="https://github.com/itrilogy/LUCY-TINGMO-ANDROID">itrilogy/LUCY-TINGMO-ANDROID</a>
 </p>
 
@@ -25,7 +27,7 @@
 
 与桌面听默（Handy lab fork）配合：本端聚焦 **模型管理、实时/后置转写、AI 纠偏**。
 
-## 功能
+## ✨ 功能
 
 | 模块 | 说明 |
 | --- | --- |
@@ -39,7 +41,7 @@
 
 > 本地 ONNX/Whisper **真实推理**通过 `LocalModelTranscriber` 适配层接入；当前为可运行的占位实现，保证 UI 与流程可完整验证。
 
-## 环境
+## 🛠 环境
 
 - Android Studio（推荐直接 Open 本目录同步 SDK）
 - **JDK 17**（命令行构建请用 OpenJDK 17；Android Studio 自带 JBR 若为 25+ 可能导致 Gradle 异常）
@@ -49,7 +51,7 @@
 本机已验证：`assembleDebug` 成功，产物见  
 `app/build/outputs/apk/debug/app-debug.apk`
 
-## 打开与运行
+## 🚀 打开与运行
 
 ```bash
 # Android Studio：File → Open → 本仓库根目录
@@ -61,7 +63,7 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 ./gradlew :app:installDebug
 ```
 
-## 结构
+## 📁 结构
 
 ```
 app/src/main/java/lab/luxi/tingmo/
@@ -71,7 +73,7 @@ app/src/main/java/lab/luxi/tingmo/
 └── ui/            # Compose 界面 · ViewModel
 ```
 
-## 本地 ONNX 真推理（已接入）
+## 🧠 本地 ONNX 真推理（已接入）
 
 依赖：`app/libs/sherpa-onnx-1.13.6.aar`（含 onnxruntime 与 JNI）。
 
@@ -88,7 +90,32 @@ cd app/libs
 gh release download v1.13.6 -R k2-fsa/sherpa-onnx -p 'sherpa-onnx-1.13.6.aar'
 ```
 
+## 🎨 品牌标识
+
+| 标识 | 预览 | 说明 | 源文件 |
+| :---: | :---: | :--- | :--- |
+| **产品方标** | <img src="docs/assets/tingmo-app-icon-256.png" width="32" height="32" alt="听默" /> | 鹿溪绿圆角底板 + 声纹弧 / 溪流意象 | `docs/assets/tingmo-app-icon-256.png` |
+| **实验室主标** | <img src="docs/assets/luxi-lab-logo.png" width="32" height="32" alt="LUXI LAB" /> | 鹿溪实验室主标 | `docs/assets/luxi-lab-logo.png` |
+
+**色板（LUXI CI）**
+
+| Token | 色值 | 用途 |
+| :--- | :--- | :--- |
+| 鹿溪绿 | `#0D5E42` | 主色 / 图标底板 |
+| 源启白 | `#F5F7FA` | 浅色背景 / 反白 |
+| 进化蓝 | `#00D2FF` | 溪流 / 数据高亮 |
+| 标题金 | `#F1C40F` | 落点 / 显著信号 |
+
 ## 许可与品牌
 
 鹿溪联合创新实验室实验构建，代码随仓库公开。品牌归鹿溪联合创新实验室；上游桌面能力致谢 Handy（MIT）。  
 ONNX 推理基于 [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) / SenseVoice。
+
+---
+
+<div align="center">
+  <img src="docs/assets/luxi-lab-logo.png" width="48" height="48" alt="LUXI LAB" />
+  <p><strong>听默 · Tingmo（Android）</strong> · 听而有迹，默而成文</p>
+  <p>© 鹿溪联合创新实验室 · LUXI Joint Innovation Lab</p>
+  <p><em>林深见鹿，源启清溪 · Deep Insights, Evolutionary Origin.</em></p>
+</div>
